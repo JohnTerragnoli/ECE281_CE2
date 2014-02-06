@@ -33,6 +33,9 @@ The graphical results can be seen here: ![alt tag](https://raw.github.com/JohnTe
 #Analysis 2: 
 It is self evident that this picture is the same as the results from the structural design test.  The pictures look the same!! This means that although one program used structural design and the other used behavioral, they still function the same.  This will come in handy later on when designs become more complicated.  Structural designs can be used to save and reuse in tight spots large amounts of code.  This is probably how computers are made!  
 
+#**What was made:**
+Obviously, the EN is the premission switch in the circuit.  signals will only pass from input to output if EN is HIGH.  Then, the inputs Io and I1 act as deciders for which of the outputs will be HIGH, making the rest of the LOW.  This is acting like a multiplexer of sorts, with an additional EN, or permission switch.  Think of it as a total power switch where if it is off, nothing else can be on in the output.  
+
 
 #**Documentation**
 C3C Her recommended that I look over my code and ensure that I did not accidentally replace a 0 with a O.  He was right!! That's why my code wasn't compiling correctly.  
