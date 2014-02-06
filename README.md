@@ -19,6 +19,8 @@ Then, this design was tested using every available possible input.  This code ca
 The graphical results for this structural design are here: 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE2/master/Structural_Testbench_results.PNG "Structural Design Results")
 
+#Analysis:  
+  This design was created by creating separate parts for individual components in the desired circuit. This way, the parts could be used over and over again.  All that is needed to be done was to redefine the inputs and outputs of the "shell" of the design of the components.  
 
 #**Behavioral Design**
 After the structural design was made, the exact same thing was made using behavior logic.  Only one .vhd file was used, aside the file used to test the code.  This one file is here:  https://raw.github.com/JohnTerragnoli/ECE281_CE2/master/Decoder_behavioral.vhd
