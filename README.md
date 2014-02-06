@@ -34,7 +34,7 @@ The graphical results can be seen here: ![alt tag](https://raw.github.com/JohnTe
 It is self evident that this picture is the same as the results from the structural design test.  The pictures look the same!! This means that although one program used structural design and the other used behavioral, they still function the same.  This will come in handy later on when designs become more complicated.  Structural designs can be used to save and reuse in tight spots large amounts of code.  This is probably how computers are made!  
 
 #**What was made:**
-Obviously, the EN is the premission switch in the circuit.  signals will only pass from input to output if EN is HIGH.  Then, the inputs Io and I1 act as deciders for which of the outputs will be HIGH, making the rest of the LOW.  This is acting like a multiplexer of sorts, with an additional EN, or permission switch.  Think of it as a total power switch where if it is off, nothing else can be on in the output.  
+Obviously, the EN is the premission switch in the circuit.  signals will only pass from input to output if EN is HIGH.  Then, the inputs Io and I1 act as deciders for which of the outputs will be HIGH, making the rest of the LOW.  This is acting like a multiplexer of sorts, with an additional EN, or permission switch.  Think of it as a total power switch where if it is off, nothing else can be on in the output.  This is useful in the concept of computer memory, because we can use old code to make more complex code.  This way we don't have to keep reinventing the wheel and can make larger and more complex computer parts out of the ones that we already have.  
 
 
 #**Documentation**
