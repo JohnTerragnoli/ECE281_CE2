@@ -19,8 +19,8 @@ Then, this design was tested using every available possible input.  This code ca
 The graphical results for this structural design are here: 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE2/master/Structural_Testbench_results.PNG "Structural Design Results")
 
-#Analysis:  
-  This design was created by creating separate parts for individual components in the desired circuit. This way, the parts could be used over and over again.  All that is needed to be done was to redefine the inputs and outputs of the "shell" of the design of the components.  
+#Analysis1:  
+  This design was created by creating separate parts for individual components in the desired circuit. This way, the parts could be used over and over again.  All that is needed to be done was to redefine the inputs and outputs of the "shell" of the design of the components.  Based on the picture, it looks like the outputs for the Y's will only become active while the EN is at HIGH.  Once EN is HIGH, the inputs I0 and I1 decide which output Y0-Y3 to be on high.  Only one of the outputs can be on high at the same time.  
 
 #**Behavioral Design**
 After the structural design was made, the exact same thing was made using behavior logic.  Only one .vhd file was used, aside the file used to test the code.  This one file is here:  https://raw.github.com/JohnTerragnoli/ECE281_CE2/master/Decoder_behavioral.vhd
@@ -29,4 +29,10 @@ This design was then tested with this testbench: https://raw.github.com/JohnTerr
 
 The graphical results can be seen here: ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE2/master/decoder_behavioral_testbench_snapchat.PNG "Behavioral Design Results")
 
-It is self evident that this picture is the same as the results from the structural design test.  
+
+#Analysis 2: 
+It is self evident that this picture is the same as the results from the structural design test.  The pictures look the same!! This means that although one program used structural design and the other used behavioral, they still function the same.  This will come in handy later on when designs become more complicated.  Structural designs can be used to save and reuse in tight spots large amounts of code.  This is probably how computers are made!  
+
+
+#**Documentation**
+C3C Her recommended that I look over my code and ensure that I did not accidentally replace a 0 with a O.  He was right!! That's why my code wasn't compiling correctly.  
